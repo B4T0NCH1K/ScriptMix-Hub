@@ -36,6 +36,17 @@ MainTab:AddButton({
   	end    
 })
 
+local Section = MainTab:AddSection({
+	Name = "Other"
+})
+
+MainTab:AddButton({
+	Name = "Re-exec ScriptMix Hub",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/ScriptMix-Hub/main/ScriptMix%20Hub.txt"))()
+  	end
+})
+
 --Notification
 OrionLib:MakeNotification({
 	Name = "Welcome!",
