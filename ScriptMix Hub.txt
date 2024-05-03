@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "ScriptMix Hub v1", HidePremium = false,IntroEnabled = true,SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "ScriptMix Hub v1.3", HidePremium = false,IntroEnabled = true,SaveConfig = true, ConfigFolder = "OrionTest"})
 --Tab
 local OtherTab = Window:MakeTab({
 	Name = "Other",
@@ -8,7 +8,13 @@ local OtherTab = Window:MakeTab({
 })
 
 local ScriptHubTab = Window:MakeTab({
-	Name = "Script Hub Scripts",
+	Name = "Script Hubs",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local HubsTab = Window:MakeTab({
+	Name = "Hubs",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -19,11 +25,31 @@ local AdminTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local ScriptTab = Window:MakeTab({
+	Name = "FE Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
 --Buttons
 OtherTab:AddButton({
 	Name = "Re-exec ScriptMix Hub",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/ScriptMix-Hub/main/ScriptMix%20Hub.txt"))()
+  	end
+})
+
+OtherTab:AddButton({
+	Name = "R15 to R6",
+	Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/9BFcHqfK"))()
+  	end
+})
+
+OtherTab:AddButton({
+	Name = "Netless",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/ScriptMix-Hub/main/Netless.txt"))()
   	end
 })
 
@@ -41,6 +67,13 @@ AdminTab:AddButton({
   	end    
 })
 
+ScriptTab:AddButton({
+	Name = "Server Admin (R6 Only)",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ONEReverseCard/My-Scripts/main/Netless%20Server%20Admin.md"))()
+  	end    
+})
+
 ScriptHubTab:AddButton({
 	Name = "Ultimate Hub v2 (WRD Forum)",
 	Callback = function()
@@ -51,21 +84,28 @@ ScriptHubTab:AddButton({
 ScriptHubTab:AddButton({
 	Name = "Universal Fe Script Hub",
 	Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script"))()
+  	end    
+})
+
+ScriptHubTab:AddButton({
+	Name = "DomainX Hub v2",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/domainx/main/source"))()
   	end    
 })
 
 --Notification
 OrionLib:MakeNotification({
 	Name = "Welcome!",
-	Content = "Welcome to ScriptMix Hub v1!",
+	Content = "Welcome to ScriptMix Hub v1.3!",
 	Image = "rbxassetid://4483345998",
 	Time = 8
 })
 
 OrionLib:MakeNotification({
 	Name = "Version info",
-	Content = "version 1.1 (tested)",
+	Content = "version 1.3 (tested)",
 	Image = "rbxassetid://4483345998",
 	Time = 8
 })
