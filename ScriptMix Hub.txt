@@ -1,50 +1,58 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "ScriptMix Hub v1", HidePremium = false,IntroEnabled = true,SaveConfig = true, ConfigFolder = "OrionTest"})
 --Tab
-local MainTab = Window:MakeTab({
-	Name = "Main",
+local OtherTab = Window:MakeTab({
+	Name = "Other",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
---Section
-local Section = MainTab:AddSection({
-	Name = "Admin Scripts"
+
+local ScriptHubTab = Window:MakeTab({
+	Name = "Script Hub Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
+
+local AdminTab = Window:MakeTab({
+	Name = "Admin Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
 --Buttons
-MainTab:AddButton({
+OtherTab:AddButton({
+	Name = "Re-exec ScriptMix Hub",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/ScriptMix-Hub/main/ScriptMix%20Hub.txt"))()
+  	end
+})
+
+AdminTab:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
   	end    
 })
 
-MainTab:AddButton({
+AdminTab:AddButton({
 	Name = "Tiger Admin",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/H17S32/Tiger_Admin/main/TigeradminREVAMP.txt"))()
   	end    
 })
 
-local Section = MainTab:AddSection({
-	Name = "Hub Mix Scripts"
-})
-
-MainTab:AddButton({
+ScriptHubTab:AddButton({
 	Name = "Ultimate Hub v2 (WRD Forum)",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Roblox-ScriptsWeAreDevs/Ultimate-Hub/main/CODE.md"))()
   	end    
 })
 
-local Section = MainTab:AddSection({
-	Name = "Other"
-})
-
-MainTab:AddButton({
-	Name = "Re-exec ScriptMix Hub",
+ScriptHubTab:AddButton({
+	Name = "Universal Fe Script Hub",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/ScriptMix-Hub/main/ScriptMix%20Hub.txt"))()
-  	end
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+  	end    
 })
 
 --Notification
@@ -57,7 +65,7 @@ OrionLib:MakeNotification({
 
 OrionLib:MakeNotification({
 	Name = "Version info",
-	Content = "version 1.0 (tested)",
+	Content = "version 1.1 (tested)",
 	Image = "rbxassetid://4483345998",
 	Time = 8
 })
