@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "ScriptMix Hub v1.3", HidePremium = false,IntroEnabled = true,SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "ScriptMix Hub v1.31", HidePremium = false,IntroEnabled = true,SaveConfig = true, ConfigFolder = "OrionTest"})
 --Tab
 local OtherTab = Window:MakeTab({
 	Name = "Other",
@@ -35,7 +35,7 @@ local ScriptTab = Window:MakeTab({
 OtherTab:AddButton({
 	Name = "Re-exec ScriptMix Hub",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/ScriptMix-Hub/main/ScriptMix%20Hub.txt"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/ScriptMix-Hub/main/ScriptMix-Hub"))()
   	end
 })
 
@@ -98,14 +98,14 @@ ScriptHubTab:AddButton({
 --Notification
 OrionLib:MakeNotification({
 	Name = "Welcome!",
-	Content = "Welcome to ScriptMix Hub v1.3!",
+	Content = "Welcome to ScriptMix Hub!",
 	Image = "rbxassetid://4483345998",
 	Time = 8
 })
 
 OrionLib:MakeNotification({
 	Name = "Version info",
-	Content = "version 1.3 (tested)",
+	Content = "version 1.31 (tested)",
 	Image = "rbxassetid://4483345998",
 	Time = 8
 })
