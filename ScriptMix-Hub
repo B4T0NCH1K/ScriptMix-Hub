@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "ScriptMix Hub v1.32", HidePremium = false,IntroEnabled = true,SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "ScriptMix Hub v1.33", HidePremium = false,IntroEnabled = true,SaveConfig = true, ConfigFolder = "OrionTest"})
 --Tab
 local OtherTab = Window:MakeTab({
 	Name = "Other",
@@ -74,6 +74,13 @@ ScriptTab:AddButton({
   	end    
 })
 
+ScriptTab:AddButton({
+	Name = "Toggle Invisibility (Press V)",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/ScriptMix-Hub/main/ToggleINVIS"))()
+  	end    
+})
+
 ScriptHubTab:AddButton({
 	Name = "Ultimate Hub v2 (WRD Forum)",
 	Callback = function()
@@ -98,7 +105,7 @@ OrionLib:MakeNotification({
 
 OrionLib:MakeNotification({
 	Name = "Version info",
-	Content = "version 1.32 (tested)",
+	Content = "version 1.33 (tested)",
 	Image = "rbxassetid://4483345998",
 	Time = 8
 })
