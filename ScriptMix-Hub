@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "ScriptMix Hub v1.31", HidePremium = false,IntroEnabled = true,SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "ScriptMix Hub v1.32", HidePremium = false,IntroEnabled = true,SaveConfig = true, ConfigFolder = "OrionTest"})
 --Tab
 local OtherTab = Window:MakeTab({
 	Name = "Other",
@@ -68,9 +68,9 @@ AdminTab:AddButton({
 })
 
 ScriptTab:AddButton({
-	Name = "Server Admin (R6 Only)",
+	Name = "Energize Animation Gui (R15 & R6)",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ONEReverseCard/My-Scripts/main/Netless%20Server%20Admin.md"))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/0MLPL32f"))()
   	end    
 })
 
@@ -78,13 +78,6 @@ ScriptHubTab:AddButton({
 	Name = "Ultimate Hub v2 (WRD Forum)",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Roblox-ScriptsWeAreDevs/Ultimate-Hub/main/CODE.md"))()
-  	end    
-})
-
-ScriptHubTab:AddButton({
-	Name = "Universal Fe Script Hub",
-	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script"))()
   	end    
 })
 
@@ -105,7 +98,7 @@ OrionLib:MakeNotification({
 
 OrionLib:MakeNotification({
 	Name = "Version info",
-	Content = "version 1.31 (tested)",
+	Content = "version 1.32 (tested)",
 	Image = "rbxassetid://4483345998",
 	Time = 8
 })
