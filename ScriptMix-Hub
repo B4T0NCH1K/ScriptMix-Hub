@@ -95,14 +95,14 @@ ScriptHubTab:AddButton({
   	end    
 })
 
-ScriptHubTab:AddButton({
+ScriptTab:AddButton({
 	Name = "FE Gale Fighter (R6)",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/ScriptMix-Hub/main/FEgaleFighterR6"))()
   	end    
 })
 
-ScriptHubTab:AddButton({
+ScriptTab:AddButton({
 	Name = "FE Gale Fighter (R15)",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/ScriptMix-Hub/main/FEgaleFighterR15"))()
