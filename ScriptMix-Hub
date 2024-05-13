@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "ScriptMix Hub v1.4", HidePremium = false,IntroEnabled = true,SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "ScriptMix Hub v1.41", HidePremium = false,IntroEnabled = true,SaveConfig = true, ConfigFolder = "OrionTest"})
 --Tab
 local OtherTab = Window:MakeTab({
 	Name = "Other",
@@ -67,6 +67,13 @@ AdminTab:AddButton({
   	end    
 })
 
+AdminTab:AddButton({
+	Name = "Nameless Admin",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))()
+  	end    
+})
+
 ScriptTab:AddButton({
 	Name = "Energize Animation Gui (R15 & R6)",
 	Callback = function()
@@ -112,7 +119,7 @@ OrionLib:MakeNotification({
 
 OrionLib:MakeNotification({
 	Name = "Version info",
-	Content = "version 1.4 (tested)",
+	Content = "version 1.41 (tested)",
 	Image = "rbxassetid://4483345998",
 	Time = 8
 })
