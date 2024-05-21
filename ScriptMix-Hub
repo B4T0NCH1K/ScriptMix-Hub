@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "ScriptMix Hub v1.42", HidePremium = false,IntroEnabled = true,SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "ScriptMix Hub v1.43", HidePremium = false,IntroEnabled = true,SaveConfig = true, ConfigFolder = "OrionTest"})
 --Tab
 local OtherTab = Window:MakeTab({
 	Name = "Other",
@@ -59,11 +59,18 @@ OtherTab:AddButton({
   	end
 })
 
-AdminTab:AddButton({
-	Name = "Infinite Yield",
+OtherTab:AddButton({
+	Name = "Netless",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-  	end    
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/ScriptMix-Hub/main/Netless.txt"))()
+  	end
+})
+
+OtherTab:AddButton({
+	Name = "MoreUNC+BasicFunctions (by vxsty)",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/ScriptMix-Hub/main/MoreUNCpBasicFunctions"))()
+  	end
 })
 
 AdminTab:AddButton({
@@ -132,7 +139,7 @@ OrionLib:MakeNotification({
 
 OrionLib:MakeNotification({
 	Name = "Version info",
-	Content = "version 1.42 (tested)",
+	Content = "version 1.43 (tested)",
 	Image = "rbxassetid://4483345998",
 	Time = 8
 })
