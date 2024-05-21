@@ -60,13 +60,6 @@ OtherTab:AddButton({
 })
 
 OtherTab:AddButton({
-	Name = "Netless",
-	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/ScriptMix-Hub/main/Netless.txt"))()
-  	end
-})
-
-OtherTab:AddButton({
 	Name = "MoreUNC+BasicFunctions (by vxsty)",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/B4T0NCH1K/ScriptMix-Hub/main/MoreUNCpBasicFunctions"))()
@@ -74,9 +67,9 @@ OtherTab:AddButton({
 })
 
 AdminTab:AddButton({
-	Name = "Tiger Admin",
+	Name = "Infinite Yield",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/H17S32/Tiger_Admin/main/TigeradminREVAMP.txt"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
   	end    
 })
 
