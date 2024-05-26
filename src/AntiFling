@@ -1,0 +1,25 @@
+_G.AntiFlingConfig = {
+
+    disable_rotation = false;
+   
+
+    limit_velocity = false;
+    limit_velocity_sensitivity = 999999999999999999999;
+    limit_velocity_slow = 0;
+   
+
+    anti_ragdoll = true;
+   
+
+    anchor = false;
+    smart_anchor = false;
+    anchor_dist = 0;
+   
+
+    teleport = false;
+    smart_teleport = false;
+    teleport_dist = 0;
+}
+--run _G.disable() to disable the script completely
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/topitbopit/rblx/main/extra/better_antifling.lua'))()
