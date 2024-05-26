@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "ScriptMix Hub v1.43", HidePremium = false,IntroEnabled = true,SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "ScriptMix Hub v1.5", HidePremium = false,IntroEnabled = true,SaveConfig = true, ConfigFolder = "OrionTest"})
 --Tab
 local OtherTab = Window:MakeTab({
 	Name = "Other",
@@ -19,20 +19,8 @@ local AimlockHubTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local HubsTab = Window:MakeTab({
-	Name = "Hubs",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
 local AdminTab = Window:MakeTab({
 	Name = "Admin Scripts",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local ScriptTab = Window:MakeTab({
-	Name = "FE Scripts",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -66,6 +54,20 @@ OtherTab:AddButton({
   	end
 })
 
+OtherTab:AddButton({
+	Name = "Script Finder (ScriptBlox)",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/FE/main/ScriptHub"))()
+  	end
+})
+
+OtherTab:AddButton({
+	Name = "Server Hop",
+	Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Server-Hop-for-any-game_308"))()
+  	end
+})
+
 AdminTab:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
@@ -77,13 +79,6 @@ AdminTab:AddButton({
 	Name = "Nameless Admin",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))()
-  	end    
-})
-
-ScriptTab:AddButton({
-	Name = "Energize Animation Gui (R15 & R6)",
-	Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/0MLPL32f"))()
   	end    
 })
 
@@ -122,17 +117,17 @@ AimlockHubTab:AddButton({
   	end    
 })
 
+AimlockHubTab:AddButton({
+	Name = "AirHub",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub/main/AirHub.lua"))()
+  	end    
+})
+
 --Notification
 OrionLib:MakeNotification({
 	Name = "Welcome!",
-	Content = "use solara for better experience",
-	Image = "rbxassetid://4483345998",
-	Time = 8
-})
-
-OrionLib:MakeNotification({
-	Name = "Version info",
-	Content = "version 1.43 (tested)",
+	Content = "use solara/incognito for better experience",
 	Image = "rbxassetid://4483345998",
 	Time = 8
 })
