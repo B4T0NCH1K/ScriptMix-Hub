@@ -1,11 +1,9 @@
-**Changelog 28/05/2024:**
-1. Added key system, that verify you are not a robot. (wtf)
-2. Added Icons.
-3. Removed not working scripts.
-4. Edited intro text.
+**Changelog 29/05/2024:**
+1. added lust updated in info tab
+2. sets fps limit up to 999
 
-Version now: 1.63
 
+Version now: 1.64
 loadstring here ↓↓↓
 
 ```
