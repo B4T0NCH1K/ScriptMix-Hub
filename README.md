@@ -1,9 +1,9 @@
-**Changelog 29/05/2024:**
-1. added lust updated in info tab
-2. sets fps limit up to 999 via setfpscap (only solara i think)
+**Changelog 03/01/2025:**
+1. removed setfpscap
+2. rescripted to the new library ui (because old isnt work)
 
 
-Version now: 1.64
+Version now: 2.00
 loadstring here ↓↓↓
 
 ```
