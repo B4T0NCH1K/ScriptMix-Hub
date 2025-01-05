@@ -1,10 +1,8 @@
-**Changelog 04/01/2025:**
-1. Added New Tab "Hubs"
-2. Added CMD-X to admin tab
-3. Added Ez Hub to Hubs tab
-4. Added screenshot to the readme file
+**Changelog 05/01/2025:**
+1. Rescripted Tabs
+2. Added so many scripts
 
-Version: 2.1
+Version: 2.2
 Loadstring ↓↓↓
 
 ```
